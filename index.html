@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>God's Clock</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>God's Clock</h1>
+    <p id="location">Detecting location...</p>
+
+    <div class="clock-wrapper">
+      <div class="god-clock">
+        <h2>Divine Time</h2>
+        <p id="god-time">--:--</p>
+        <p id="phase-label">Phase: --</p>
+      </div>
+
+      <div class="man-clock">
+        <h2>Man-Made Time</h2>
+        <p id="man-time">--:--</p>
+      </div>
+    </div>
+
+    <div id="sun-bar">
+      <p>Sun Position (East → West)</p>
+      <div id="sun-indicator"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
