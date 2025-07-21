@@ -1,47 +1,43 @@
 body {
-  font-family: sans-serif;
-  background-color: #f3f0e6;
-  margin: 0;
-  padding: 2rem;
+  font-family: 'Arial', sans-serif;
   text-align: center;
+  padding: 30px;
+  background: #f5f5f5;
+}
+
+.container {
+  background: white;
+  padding: 25px;
+  border-radius: 8px;
+  max-width: 400px;
+  margin: auto;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
 h1 {
-  color: #3e2c00;
+  color: #333;
 }
 
-.clock-wrapper {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 2rem;
-  flex-wrap: wrap;
-}
-
-.god-clock, .man-clock {
-  border: 2px solid #d4af37;
-  padding: 1rem;
-  border-radius: 10px;
-  width: 250px;
-  background-color: #fffbe6;
-}
-
-#sun-bar {
-  margin-top: 3rem;
-  position: relative;
-  height: 20px;
-  background: linear-gradient(to right, #fceabb, #f8b500);
-  border-radius: 10px;
+input[type="range"] {
   width: 100%;
-  max-width: 500px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-top: 10px;
 }
 
-#sun-indicator {
-  position: absolute;
-  top: -5px;
-  width: 10px;
-  height: 30px;
-  background-color: #ffa500;
-  border-radius: 50%;
+#zipInput {
+  padding: 6px;
+  width: 120px;
+}
+
+button {
+  padding: 6px 12px;
+  margin-left: 6px;
+}
+
+.divine-time {
+  margin-top: 20px;
+}
+
+.note {
+  font-size: 0.9em;
+  color: gray;
 }

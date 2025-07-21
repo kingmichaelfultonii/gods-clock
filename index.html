@@ -2,34 +2,29 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>God's Clock</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="container">
-    <h1>God's Clock</h1>
-    <p id="location">Detecting location...</p>
+    <h1>God’s Clock</h1>
+    <p><strong>Location:</strong> <span id="location">Loading...</span></p>
 
-    <div class="clock-wrapper">
-      <div class="god-clock">
-        <h2>Divine Time</h2>
-        <p id="god-time">--:--</p>
-        <p id="phase-label">Phase: --</p>
-      </div>
+    <label for="zipInput">Enter ZIP Code:</label>
+    <input type="text" id="zipInput" placeholder="30303" />
+    <button onclick="updateLocation()">Update</button>
 
-      <div class="man-clock">
-        <h2>Man-Made Time</h2>
-        <p id="man-time">--:--</p>
-      </div>
+    <div class="divine-time">
+      <h2>Divine Time</h2>
+      <p id="divinePercent">--%</p>
+      <input type="range" id="sunSlider" min="0" max="100" value="0" disabled />
     </div>
 
-    <div id="sun-bar">
-      <p>Sun Position (East → West)</p>
-      <div id="sun-indicator"></div>
-    </div>
+    <p class="note">Divine time = time between sunrise and sunset</p>
   </div>
 
+  <script src="https://unpkg.com/suncalc@1.8.0/suncalc.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
